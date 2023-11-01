@@ -15,7 +15,7 @@ function App() {
     { rowNo: 4, desc: 'Build projects', assigned: 'Abhinav' }
   ])
 
-  const addTodo = (desc, assigned) => {
+  const addTodo = (desc:string, assigned:string) => {
 
     let rowNumber = 1;
     if (todos.length > 0) {
@@ -30,7 +30,7 @@ function App() {
 
   }
 
-  const deleteToDo = (rowNo) => {
+  const deleteToDo = (rowNo:number) => {
     let filtered = todos.filter(function (value) {
       return value.rowNo !== rowNo;
     });
