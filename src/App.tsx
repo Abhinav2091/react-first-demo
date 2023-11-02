@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ToTable from "./components/ToTable";
-import ToDoForm from "./components/ToDoForm";
+import {ToTable} from "./components/ToTable";
+import {ToDoForm} from "./components/ToDoForm";
 
-function App() {
+export const App=()=> {
 
   const [showAddToDoForm,setShowAddToDoForm] = useState(false)
 
@@ -58,4 +58,3 @@ function App() {
   );
 }
 
-export default App;
